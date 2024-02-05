@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+      <title>Lab 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td{
+                border: 2px solid black;
+                border-collapse: collapse;
+
+            }
+            th{
+                background-color: yellow;
+                color: black;
+            }
+            td{
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                text-align: center; 
+            }
+            tr:nth-child(even) {
+                background-color: yellow;
+            }
+          </style>
+      </head>
+
+      <body>
+
+        
+        <h2>Table 3</h2>
+
+            <table>
+                <thead>
+                  <tr>
+                    <th>Department</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="3">Editorial</td>
+                    <td>John Doe</td>
+                    <td>Johndoe@gmail.com</td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>Jane Doe</td>
+                    <td>Janedoe@gmail.com</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Aaron Doe</td>
+                    <td>Aarondoe@gmail.com</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" style="background-color: white;">Marketing</td>
+                    <td>Josh Doe</td>
+                    <td>Joshdoe@gmail.com</td>
+                    <td>19</td>
+                  </tr>
+                  <tr>
+                    <td>Christian Doe</td>
+                    <td>Christiandoe@gmail.com</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" style="background-color: white;">Customer Service</td>
+                    <td>Noelle Doe</td>
+                    <td>Noelledoe@gmail.com</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <td>Robert Doe</td>
+                    <td>Robertdoe@gmail.com</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">Total Years of Service</td>
+                    <td>75</td>
+                  </tr>
+                </tbody>
+              </table>
+
+      </body>
+</html>
