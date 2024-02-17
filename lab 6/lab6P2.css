@@ -1,0 +1,32 @@
+h1 {
+    color: orange;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+.header {
+    overflow: hidden;
+}
+.text {
+    text-align: center;
+}
+h3 {
+    color: black;
+    font-style: italic;
+}
+h2{
+    color: black;
+}
+ol{
+    list-style-type: none;
+    color: grey;
+}
+ol li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+ol li:nth-of-type(-n+3) u{
+    color: grey;
+}
+ol li:nth-last-of-type(-n+4) u{
+    color: darkred;
+}

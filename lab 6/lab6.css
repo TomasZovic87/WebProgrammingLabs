@@ -1,0 +1,41 @@
+h1 {
+    color: orange;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-style: italic;
+    margin: 0;
+}
+.header {
+    overflow: hidden;
+}
+#pumpkin-img {
+    float: left;
+    margin-right: 3px;
+}
+.text {
+    text-align: center;
+}
+h3 {
+    color: black;
+    margin: 0;
+}
+h2{
+    color: black;
+}
+ol{
+    list-style-type: none;
+    padding: 0;
+    text-decoration: underline;
+}
+  
+ol a {
+    text-decoration: none;
+    color: orange;
+}
+  
+ol a:hover {
+    color: green;
+}
+  
+ol a:visited {
+    color: black;
+}
