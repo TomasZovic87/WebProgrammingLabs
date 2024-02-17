@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <head>
+        <style>
+            h2{
+                color: black;
+                text-align: left;
+            }
+            form{
+                padding-top: 2px;
+                text-align: left;
+            }
+            form input[type="text"] {
+                text-align: left;
+                width: 300px;
+                padding: 5px;
+                margin-bottom: 10px;
+                border: 2px solid black;
+            }
+            form input[type="submit"] {
+                width: 150px;
+                padding: 2px;
+                margin-top: 2px;
+                box-sizing: border-box;
+                background-color: rgb(62, 224, 25);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Payment</h2>
+        <form action="payment.php" method="get">
+            <label for="cardholder_name">Cardholder's Name</label>
+                <input type="text" name="cardholder_name" required>
+            <br>
+            <label for="cardnumber">Card number</label>
+                <input type="text" name="cardnumber" required>
+            <br>
+            <label for="expiry_date">Expiry date</label>
+                &nbsp;&nbsp;
+                <input type="date" name="date">
+            <br><br>
+            <label for="card_cvv">Card CVV</label>
+                <input type="text" name="card_cvv" required>
+            <br>
+            <input type="radio" name="savecard" value="savecard">Save card on file?
+            <br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </body>
+</html>
