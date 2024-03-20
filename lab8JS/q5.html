@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>Question 5: 
+        <style>
+            button {
+                width: 200px;
+                height: 100px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            function sum(){
+                var stringNum1 = prompt("Enter the first number: ");
+                var stringNum2 = prompt("Enter the second number: ");
+
+                var num1 = parseFloat(stringNum1);
+                var num2 = parseFloat(stringNum2);
+
+                var sum = num1 + num2;
+
+                document.getElementById("output1").innerHTML = "The sum is: " + sum;
+            }
+            function addYears(){
+                var num = 10;
+
+                var addedYears = num.toString();
+
+                var addedYears = + "years old";
+                
+                document.getElementById("output2").innerHTML = "You are " + addedYears;
+            }
+        </script>
+
+        <br><br><br>
+
+        <button onclick="sum()"></button>
+        <div id="output1"></div>
+
+        <br><br><br>
+
+
+        <button onclick="addYears()"></button>
+        <div id="output2"></div>
+    </body>
+</html>
