@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 3</title>
+    </head>
+
+    <button onclick="addProduct()">Add Product</button>
+    <button onclick="removeProduct()">Remove Product</button>
+    <button onclick="inventoryDisplay()">Invetory Display</button>
+    <button onclick="inventoryTotalValue()">Inventory Total Value</button>
+
+    <script>
+        var inv = [];
+
+        function addProduct(){
+            var productId = prompt("Please enter the product ID for the unit: ");
+            var name = prompt("Please enter the name of the product: ");
+            var price = parseFloat(prompt("Please the price of the product: "));
+            var quantity = parseInt(prompt("Please enter the quantity: "));
+
+            var product = {
+                productId: productId,
+                name: name,
+                price: price,
+                quantity: quantity
+            };
+
+            inventory.push(product);
+        }
+
+        function removeProduct(){
+            const index = parseInt(prompt("Please enter the product ID of the product you want to remove"));
+            if (index == productId){
+                index.splice();
+                print("The product with the ID" + index + "was removed.")
+            } else {
+                print("Error - Product with the with product ID given was not found.")
+            }
+        }
+
+        function inventoryDisplay(){
+            inv.forEach(function(product){
+                console.log("Name: " + product.name + ", Product ID: " + product.productId + ", Product Price : $" + product.price + ", Product Quantity: " + product.quantity + " units");
+            });
+        }
+
+        function inventoryTotalValue(){
+            var inventoryTotalValue = 0;
+            inv.forEach(function(product){
+                inventoryTotalValue += product.price * product.quantity;
+            });
+        }
+    </script>
+</html>
+
